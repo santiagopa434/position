@@ -1,24 +1,44 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 @font-face {
     font-family: 'fuente1';
-    src: url('font/Roboto-CondensedItalic.ttf');
+    src: url('font/Roboto-Italic.ttf');
 }
 
 html{
     width: 100%;
     height: 100%;
     font-family: 'fuente1';
+    /* fondo de pagina */
+    background-image: url(imagenes/fondop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(208, 233, 183, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+.logo{
+    padding: 15px;
+}
+.logo img{
+    width: 5rem;
+    border-radius: 50%;
 }
 .contenedor{
     max-width: 55rem;
     width: 90%;
     margin: 2rem auto;
-
 }
 
 .contenedor .fondo{
@@ -28,65 +48,65 @@ html{
     padding-top: 58%;
     position: relative;
 }
+
 .contenedor .fondo .section{
     width: 31%;
     height: 14%;
-    border-radius: 1.5625rem;
+    border-radius: 25px;
     /* border: 1px solid red; */
     position: absolute;
+     
 }
-.contenedor .fondo .section:hover{
-    background-color: rgba(2, 2, 2, 0.3);
-    transform: scale(1.2);
-    transition: all 1s;
 
+.contenedor .fondo .section:hover{
+    background-color: rgba(94, 68, 68,0.4);
+    transform: scaleY(1.2);
+    transition: all 1s;
 }
+
 .contenedor .fondo .section.uno{
     top: 8.5%;
     left: 6%;
 }
+
 .contenedor .fondo .section.dos{
     right: 36%;
-    bottom: 65%;
+    bottom: 66%;
     width: 26%;
-    height: 89px 
+}
 
-}
 .contenedor .fondo .section.tres{
-    top: 68.5%;
-    left: 9%;
-    width: 31%;
-    height: 104px;
+    top: 40%;
+    left: 8%;
 }
+
 .contenedor .fondo .section.cuatro{
-    top: 37.5%;
-    left: 13%;
-    width: 23%;
-    height: 92px;
+    top: 68%;
+    left: 8%;
+    height: 20%;
 }
+
 .contenedor .fondo .section.cinco{
-    top: 45.5%;
-    left: 57%;
-    width: 31%;
-    height: 90px
+    top: 71%;
+    left: 63%;
+    height: 20%;
 }
 
 .contenedor .fondo .section.seis{
-    top: 10.5%;
-    left: 70%;
-    width: 28%;
-    height: 91px
-}
-.contenedor .fondo .section.siete{
-    top: 71.5%;
-    left: 64%;
-    width: 30%;
-    height: 91px;
-}
-.contenedor .fondo .section.ocho img{
-    top: 71.5%;
-    left: 64%;
-    width: 30%;
-    height: 91px;
+    top: 44%;
+    left: 57%;
+    height: 20%
 }
 
+.contenedor .fondo .section.siete{
+    top: 10%;
+    left: 68%;
+    height: 20%;
+}
+
+.contenedor .fondo .ocho img{
+    position: absolute;
+    width: 100px;
+    top: 44%;
+    left: 43%
+}
